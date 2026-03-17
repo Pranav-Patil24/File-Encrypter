@@ -1,6 +1,10 @@
 node {
 
 try {
+	
+    stage('Clone'){
+	checkout scm
+    }
 
     stage('Build') {
         sh '''
